@@ -13,7 +13,7 @@ const app = Fastify({
 });
 
 // Register your application as a normal plugin.
-app.register(import("src\server.ts"));
+app.register(import("../src/app"));
 
 export default async (req, res) => {
   await app.ready();
