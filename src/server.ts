@@ -4,10 +4,6 @@ import { appRoutes } from './routes';
 
 const app = Fastify();
 
-/**
- * Método HTTP: Get, Post, Put, Delete
- */
-
 app.register(cors);
 app.register(appRoutes);
 
